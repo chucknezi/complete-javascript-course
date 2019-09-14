@@ -14,21 +14,24 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 
 GOOD LUCK 😀 */
 
-
-let markMass = 7;
-let johnMass = 8;
-let markHeight = 10;
-let johnHeight = 3;
+//My solution
+let markMass = 78;
+let johnMass = 92;
+let markHeight = 1.69;
+let johnHeight = 1.95;
 
 
 function bmi (mass, height){
 
-    (mass/Math.pow(height, 2)) / height * height;
+   return mass / (height * height);
 }
 
-let markBMI = bmi(markMass, markHeight);
-let johnBMI = bmi(johnMass, johnHeight);
+var markBMI = bmi(markMass, markHeight);
+console.log(markBMI)
+var johnBMI = bmi(johnMass, johnHeight);
+console.log(johnBMI)
 let markVJohn = markBMI > johnBMI;
+console.log(markVJohn)
 let heightContest = `Is Mark's BMI higher that John's true? ${markVJohn}` 
 console.log(heightContest);
 
