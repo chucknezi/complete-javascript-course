@@ -1,65 +1,114 @@
+/* ################Code Challenge *******************:/
 
-// var firstName = "John"
-// var lastName = "Smith"
-// var age = 29;
+/*****************************
+* CODING CHALLENGE 1
+*/
 
-// var fullAge = true;
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
 
-// var job;
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs
+3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
+4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
 
-
-// console.log(firstName);
-// console.log(fullAge);
-// console.log(job)
-
-// job = 'Teacher';
-// console.log(job)
-
-
-// /*************
-//  * Variable mutation and type coercion
-//  */
-
-//  //Type coercion
-//  console.log(firstName + ' ' + age);
-//  var job, isMarried;
-//  job = 'teacher';
-//  isMarried = false;
-
-//  console.log(firstName + ' is a ' + age + ' year old ' + job + '.'+ ' Is he married? ' + isMarried)
-
-// //Variable mutation
-
-// age = 'twenty eight'
-
-//Operator Precedence
-var now = 2018;
-var yearJohn = 1989;
-var fullAge = 18;
-
-var isFullAge = now - yearJohn >= fullAge; //true 
-//equals sign is also an operator
-console.log(isFullAge)
+GOOD LUCK 😀 */
 
 
-var ageJohn = now - yearJohn;
-var ageMark = 35;
-var average = (ageJohn + ageMark) / 2; //division has higher precedence
-console.log(average)
+let markMass = 7;
+let johnMass = 8;
+let markHeight = 10;
+let johnHeight = 3;
 
-//Multiple assignments
 
-var x, y;
-//associativity
+function bmi (mass, height){
 
-x = y = (3+5) * 4 - 6;
+    (mass/Math.pow(height, 2)) / height * height;
+}
 
-console.log(x, y);
+let markBMI = bmi(markMass, markHeight);
+let johnBMI = bmi(johnMass, johnHeight);
+let markVJohn = markBMI > johnBMI;
+let heightContest = `Is Mark's BMI higher that John's true? ${markVJohn}` 
+console.log(heightContest);
 
-//More operators
 
-x *= 2;
-console.log(x)
 
-x += 10;
-x++;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // var firstName = "John"
+// // var lastName = "Smith"
+// // var age = 29;
+
+// // var fullAge = true;
+
+// // var job;
+
+
+// // console.log(firstName);
+// // console.log(fullAge);
+// // console.log(job)
+
+// // job = 'Teacher';
+// // console.log(job)
+
+
+// // /*************
+// //  * Variable mutation and type coercion
+// //  */
+
+// //  //Type coercion
+// //  console.log(firstName + ' ' + age);
+// //  var job, isMarried;
+// //  job = 'teacher';
+// //  isMarried = false;
+
+// //  console.log(firstName + ' is a ' + age + ' year old ' + job + '.'+ ' Is he married? ' + isMarried)
+
+// // //Variable mutation
+
+// // age = 'twenty eight'
+
+// //Operator Precedence
+// var now = 2018;
+// var yearJohn = 1989;
+// var fullAge = 18;
+
+// var isFullAge = now - yearJohn >= fullAge; //true 
+// //equals sign is also an operator
+// console.log(isFullAge)
+
+
+// var ageJohn = now - yearJohn;
+// var ageMark = 35;
+// var average = (ageJohn + ageMark) / 2; //division has higher precedence
+// console.log(average)
+
+// //Multiple assignments
+
+// var x, y;
+// //associativity
+
+// x = y = (3+5) * 4 - 6;
+
+// console.log(x, y);
+
+// //More operators
+
+// x *= 2;
+// console.log(x)
+
+// x += 10;
+// x++;
